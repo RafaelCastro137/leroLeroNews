@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Lero-Lero News</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link href="https://fonts.googleapis.com/css?family=UnifrakturCook:700" rel="stylesheet">
+		<link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+		<style>
+			.jumbotron{
+				margin-top: 30px !important;
+			}
+			.logo{
+				font-family: 'UnifrakturCook', cursive;
+				font-size: 4.0em;
+			}
+			.icon{
+				font-size: 4.0em;
+			}
+		</style>
+		<script language=javascript type="text/javascript">
+			dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+			monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+			now = new Date
+
+			function time(){
+				today=new Date();
+				h=today.getHours();
+				m=today.getMinutes();
+				s=today.getSeconds();
+				document.getElementById('txt').innerHTML=h+":"+m+":"+s;
+				setTimeout('time()',500);
+			}
+		</script>
+	</head>
+	<body onload="time()">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<p class="text-right">
+						<i class="fa fa-calendar" aria-hidden="true"></i>
+						<script language=javascript type="text/javascript">
+							document.write ("Hoje é " + dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". ")
+						</script>
+						<i class="fa fa-clock-o" aria-hidden="true"></i>
+						Agora são: <span id="txt"></span>			
+					</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-1">
+					<i class="fa fa-newspaper-o icon" aria-hidden="true"></i>
+				</div>
+				<div class="col-lg-11">					
+					<h1 class="logo">Lero-Lero News</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<nav class="navbar navbar-toggleable-md navbar-inverse bg-primary">
+						<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+						</button>
+						<a class="navbar-brand" href="#">&nbsp;</a>
+						<div class="collapse navbar-collapse" id="navbarSupportedContent">
+							<ul class="navbar-nav mr-auto">
+								<li class="nav-item active">
+									<a class="nav-link" href="#"><i class="fa fa-home" aria-hidden="true"></i> Home</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#"><i class="fa fa-newspaper-o" aria-hidden="true"></i> Notícias</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#"><i class="fa fa-futbol-o" aria-hidden="true"></i> Esportes</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#"><i class="fa fa-video-camera" aria-hidden="true"></i> Entretenimento</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#"><i class="fa fa-address-book" aria-hidden="true"></i> Redação</a>
+								</li>
+								<li class="nav-item active">
+									<a class="nav-link" href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i> Fale Conosco</a>
+								</li>
+							</ul>
+							<form class="form-inline my-2 my-lg-0">
+								<input class="form-control mr-sm-2" type="text" placeholder="Pesquisar">
+								<button class="btn btn-outline-info my-2 my-sm-0" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+							</form>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="jumbotron">
+						<h5 class="display-4">Amigos envolvidos em projeto de jovem sumido no Acre fizeram pacto de sigilo, diz delegado</h5>
+						<p class="lead">Delegado disse ainda não descartar que jovem tenha usado celulares com números diferentes para não ser localizado. Bruno Borges está desaparecido desde o último dia 27 de março.</p>
+						<hr class="my-4">
+						<p class="text-justify">Responsável pelas investigações do desaparecimento do acreano Bruno Borges, de 24 anos, o delegado Fabrizzio Sobreira, coordenador da Delegacia de Investigação Criminal (DIC), diz que os amigos que ajudaram o jovem com as escrituras no quarto e a criptografia de 14 livros, teriam feito um pacto de sigilo para não revelar o objetivo real do projeto.</p>
+						<p class="lead">
+							<a class="btn btn-primary btn-lg" href="#" role="button">Leia mais</a>
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<h3 class="display-5 text-danger">Display 4</h3>
+					<img src="images/noticia.jpg" class="figure-img img-fluid rounded" />
+					<p class="text-justify text-danger">"Pelo que nós entendemos na investigação, existia entre eles um pacto de não revelar o projeto de Bruno.</p>
+					<hr>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="display-5 text-success">Vasco Sofredor</h3>
+					<img src="images/esportes.jpg" class="figure-img img-fluid rounded" />
+					<p class="text-justify text-success">"Pelo que nós entendemos na investigação, existia entre eles um pacto de não revelar o projeto de Bruno.</p>
+					<hr>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="display-5 text-warning">Display 4</h3>
+					<img src="images/entretenimento.png" class="figure-img img-fluid rounded" />
+					<p class="text-justify text-warning">"Pelo que nós entendemos na investigação, existia entre eles um pacto de não revelar o projeto de Bruno.</p>
+					<hr>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-4">
+					<h3 class="display-5 text-danger">Display 4</h3>
+					<p class="text-justify text-danger">"Pelo que nós entendemos na investigação, existia entre eles um pacto de não revelar o projeto de Bruno.</p>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="display-5 text-success">Display 4</h3>
+					<p class="text-justify text-success">"Pelo que nós entendemos na investigação, existia entre eles um pacto de não revelar o projeto de Bruno.</p>
+				</div>
+				<div class="col-lg-4">
+					<h3 class="display-5 text-warning">Display 4</h3>
+					<p class="text-justify text-warning">"Pelo que nós entendemos na investigação, existia entre eles um pacto de não revelar o projeto de Bruno.</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-12">
+					<h1 class="display-4 text-primary">NEWS <i class="fa fa-play-circle-o" aria-hidden="true"></i> PLAY</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg-6">
+					<iframe width="560" height="300" src="https://www.youtube.com/embed/eAJ5Qgm3uUM" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-3">
+					<iframe width="250" height="145" src="https://www.youtube.com/embed/CeXePu3usyM" frameborder="0" allowfullscreen></iframe>
+					<iframe width="250" height="145" src="https://www.youtube.com/embed/Gjsk1i3rVCU" frameborder="0" allowfullscreen></iframe>
+				</div>
+				<div class="col-lg-3">
+					<iframe width="250" height="145" src="https://www.youtube.com/embed/Qc3facu-rYQ" frameborder="0" allowfullscreen></iframe>
+					<iframe width="250" height="145" src="https://www.youtube.com/embed/stz75Vtt4UM" frameborder="0" allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-3.1.1.slim.min.js" ></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
